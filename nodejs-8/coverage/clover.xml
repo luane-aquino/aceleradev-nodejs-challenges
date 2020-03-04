@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1583363567135" clover="3.2.0">
-  <project timestamp="1583363567135" name="All files">
-    <metrics statements="82" coveredstatements="41" conditionals="12" coveredconditionals="3" methods="24" coveredmethods="7" elements="118" coveredelements="51" complexity="0" loc="82" ncloc="82" packages="3" files="4" classes="4"/>
+<coverage generated="1583365547335" clover="3.2.0">
+  <project timestamp="1583365547335" name="All files">
+    <metrics statements="82" coveredstatements="40" conditionals="12" coveredconditionals="3" methods="24" coveredmethods="7" elements="118" coveredelements="50" complexity="0" loc="82" ncloc="82" packages="3" files="4" classes="4"/>
     <package name="src">
-      <metrics statements="32" coveredstatements="16" conditionals="6" coveredconditionals="1" methods="10" coveredmethods="2"/>
+      <metrics statements="32" coveredstatements="15" conditionals="6" coveredconditionals="1" methods="10" coveredmethods="2"/>
       <file name="server.js" path="/home/luane/codenation/nodejs-8/src/server.js">
-        <metrics statements="32" coveredstatements="16" conditionals="6" coveredconditionals="1" methods="10" coveredmethods="2"/>
+        <metrics statements="32" coveredstatements="15" conditionals="6" coveredconditionals="1" methods="10" coveredmethods="2"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -25,17 +25,17 @@
         <line num="36" count="0" type="stmt"/>
         <line num="37" count="0" type="stmt"/>
         <line num="41" count="1" type="stmt"/>
-        <line num="42" count="1" type="stmt"/>
-        <line num="43" count="1" type="stmt"/>
-        <line num="45" count="1" type="stmt"/>
-        <line num="47" count="1" type="cond" truecount="1" falsecount="1"/>
-        <line num="48" count="1" type="stmt"/>
+        <line num="42" count="0" type="stmt"/>
+        <line num="43" count="0" type="stmt"/>
+        <line num="45" count="0" type="stmt"/>
+        <line num="47" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="48" count="0" type="stmt"/>
         <line num="50" count="0" type="stmt"/>
         <line num="55" count="1" type="stmt"/>
-        <line num="56" count="0" type="stmt"/>
-        <line num="58" count="0" type="stmt"/>
-        <line num="60" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="61" count="0" type="stmt"/>
+        <line num="56" count="1" type="stmt"/>
+        <line num="58" count="1" type="stmt"/>
+        <line num="60" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="61" count="1" type="stmt"/>
         <line num="63" count="0" type="stmt"/>
         <line num="68" count="1" type="stmt"/>
       </file>
@@ -66,19 +66,19 @@
         <line num="34" count="0" type="stmt"/>
         <line num="40" count="0" type="stmt"/>
         <line num="42" count="0" type="stmt"/>
-        <line num="46" count="1" type="stmt"/>
-        <line num="47" count="1" type="stmt"/>
-        <line num="49" count="1" type="cond" truecount="1" falsecount="1"/>
-        <line num="50" count="1" type="stmt"/>
+        <line num="46" count="0" type="stmt"/>
+        <line num="47" count="0" type="stmt"/>
+        <line num="49" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="50" count="0" type="stmt"/>
         <line num="53" count="0" type="stmt"/>
         <line num="59" count="0" type="stmt"/>
-        <line num="63" count="0" type="stmt"/>
-        <line num="64" count="0" type="stmt"/>
-        <line num="66" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="63" count="1" type="stmt"/>
+        <line num="64" count="1" type="stmt"/>
+        <line num="66" count="1" type="cond" truecount="1" falsecount="1"/>
         <line num="67" count="0" type="stmt"/>
         <line num="68" count="0" type="stmt"/>
         <line num="70" count="0" type="stmt"/>
-        <line num="73" count="0" type="stmt"/>
+        <line num="73" count="1" type="stmt"/>
         <line num="78" count="1" type="stmt"/>
       </file>
       <file name="schema.js" path="/home/luane/codenation/nodejs-8/src/model/schema.js">
@@ -95,12 +95,12 @@
         <line num="3" count="1" type="stmt"/>
         <line num="5" count="1" type="stmt"/>
         <line num="7" count="1" type="stmt"/>
-        <line num="8" count="3" type="stmt"/>
-        <line num="9" count="3" type="stmt"/>
+        <line num="8" count="6" type="stmt"/>
+        <line num="9" count="6" type="stmt"/>
         <line num="12" count="1" type="stmt"/>
-        <line num="13" count="2" type="stmt"/>
-        <line num="15" count="2" type="stmt"/>
-        <line num="16" count="2" type="stmt"/>
+        <line num="13" count="4" type="stmt"/>
+        <line num="15" count="4" type="stmt"/>
+        <line num="16" count="4" type="stmt"/>
         <line num="18" count="0" type="stmt"/>
         <line num="23" count="1" type="stmt"/>
       </file>

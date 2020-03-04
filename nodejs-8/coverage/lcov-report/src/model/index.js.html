@@ -178,34 +178,34 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -255,11 +255,11 @@ const animals = {
   }),
 &nbsp;
   // Atualiza um registro da base, baseado em um id /chave
-  update: (data, id) =&gt; new Promise((resolve) =&gt; {
-    const db = openDB()
+  update: <span class="fstat-no" title="function not covered" >(d</span>ata, id) =&gt; <span class="cstat-no" title="statement not covered" >new Promise(<span class="fstat-no" title="function not covered" >(r</span>esolve) =&gt; {</span>
+    const db = <span class="cstat-no" title="statement not covered" >openDB()</span>
 &nbsp;
-    <span class="missing-if-branch" title="else path not taken" >E</span>if (!db[id]) {
-      return resolve(false)
+<span class="cstat-no" title="statement not covered" >    if (!db[id]) {</span>
+<span class="cstat-no" title="statement not covered" >      return resolve(false)</span>
     }
 &nbsp;
 <span class="cstat-no" title="statement not covered" >    db[id] = Object.assign(</span>
@@ -272,17 +272,17 @@ const animals = {
   }),
 &nbsp;
   // Remove um registro da base, baseado em um id / chave
-  destroy: <span class="fstat-no" title="function not covered" >id</span> =&gt; <span class="cstat-no" title="statement not covered" >new Promise(<span class="fstat-no" title="function not covered" >(r</span>esolve) =&gt; {</span>
-    const db = <span class="cstat-no" title="statement not covered" >openDB()</span>
+  destroy: id =&gt; new Promise((resolve) =&gt; {
+    const db = openDB()
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    if (db[id]) {</span>
+    <span class="missing-if-branch" title="if path not taken" >I</span>if (db[id]) {
 <span class="cstat-no" title="statement not covered" >      delete db[id]</span>
 <span class="cstat-no" title="statement not covered" >      updateDB(db)</span>
 &nbsp;
 <span class="cstat-no" title="statement not covered" >      return resolve(true)</span>
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    return resolve(false)</span>
+    return resolve(false)
   })
 }
 &nbsp;
@@ -294,7 +294,7 @@ module.exports = { animals }</pre></td></tr></table></pre>
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Wed Mar 04 2020 20:12:47 GMT-0300 (Brasilia Standard Time)
+                at Wed Mar 04 2020 20:45:47 GMT-0300 (Brasilia Standard Time)
             </div>
         </div>
         <script src="../../prettify.js"></script>
