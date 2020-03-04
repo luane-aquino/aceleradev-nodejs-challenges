@@ -237,7 +237,7 @@ describe('The API on /api/animals/:id Endpoint at DELETE method should...', () =
     expect(res.statusCode).toBe(204)
   })
 
-  test.only('return status code 404 and an error message', async () => {
+  test('return status code 404 and an error message', async () => {
     const res = await request(server.app).delete('/api/animals/ANI1580216220549RD488')
 
     expect(res.statusCode).toBe(404)
