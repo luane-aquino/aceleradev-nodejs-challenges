@@ -7,38 +7,41 @@ const {
 } = require('./utils')
 
 beforeAll(() => cleanDB())
+
+beforeEach(() => {
+  populateDB({
+    "ANI1580214599567RD121": {
+      "created_at": "2020-01-28T12:29:59.567Z",
+      "updated_at": "2020-01-28T12:29:59.567Z",
+      "pet_name": "Belchior Fernandes Montalvão",
+      "description": "Gatinho mais fofinho desse mundo",
+      "animal_type": "Gato",
+      "pet_age": "6 Meses",
+      "sex": "Macho",
+      "color": "Branco Malhado",
+      "image_url": ""
+    },
+    "ANI1580216220549RD493": {
+      "created_at": "2020-01-28T12:57:00.550Z",
+      "updated_at": "2020-01-28T12:57:00.550Z",
+      "pet_name": "Tereza Fernandes Montalvão",
+      "description": "Gatinha mais perfeita desse mundão redondo",
+      "animal_type": "Gato",
+      "pet_age": "6 Meses",
+      "sex": "Fêmea",
+      "color": "Malhada",
+      "image_url": ""
+    }
+  })
+})
+
+afterEach(() => {
+  cleanDB()
+})
+
 afterAll(() => cleanDB())
 
 describe('The API on /api/animals Endpoint at GET method should...', () => {
-  beforeAll(() => {
-    populateDB({
-      "ANI1580214599567RD121": {
-        "created_at": "2020-01-28T12:29:59.567Z",
-        "updated_at": "2020-01-28T12:29:59.567Z",
-        "pet_name": "Belchior Fernandes Montalvão",
-        "description": "Gatinho mais fofinho desse mundo",
-        "animal_type": "Gato",
-        "pet_age": "6 Meses",
-        "sex": "Macho",
-        "color": "Branco Malhado",
-        "image_url": ""
-      },
-      "ANI1580216220549RD493": {
-        "created_at": "2020-01-28T12:57:00.550Z",
-        "updated_at": "2020-01-28T12:57:00.550Z",
-        "pet_name": "Tereza Fernandes Montalvão",
-        "description": "Gatinha mais perfeita desse mundão redondo",
-        "animal_type": "Gato",
-        "pet_age": "6 Meses",
-        "sex": "Fêmea",
-        "color": "Malhada",
-        "image_url": ""
-      }
-    })
-  })
-
-  afterAll(() => cleanDB())
-
   test(`return 200 as status code and have 'total' and 'data' as properties`, async () => {
     expect.assertions(2)
 
@@ -96,35 +99,6 @@ describe('The API on /api/animals Endpoint at GET method should...', () => {
 })
 
 describe('The API on /api/animals/:id Endpoint at GET method should...', () => {
-  beforeAll(() => {
-    populateDB({
-      "ANI1580214599567RD121": {
-        "created_at": "2020-01-28T12:29:59.567Z",
-        "updated_at": "2020-01-28T12:29:59.567Z",
-        "pet_name": "Belchior Fernandes Montalvão",
-        "description": "Gatinho mais fofinho desse mundo",
-        "animal_type": "Gato",
-        "pet_age": "6 Meses",
-        "sex": "Macho",
-        "color": "Branco Malhado",
-        "image_url": ""
-      },
-      "ANI1580216220549RD493": {
-        "created_at": "2020-01-28T12:57:00.550Z",
-        "updated_at": "2020-01-28T12:57:00.550Z",
-        "pet_name": "Tereza Fernandes Montalvão",
-        "description": "Gatinha mais perfeita desse mundão redondo",
-        "animal_type": "Gato",
-        "pet_age": "6 Meses",
-        "sex": "Fêmea",
-        "color": "Malhada",
-        "image_url": ""
-      }
-    })
-  })
-
-  afterAll(() => cleanDB())
-
   test('return status code 200 and an animal of id: ANI1580214599567RD121', async () => {
     const res = await request(server.app).get('/api/animals/ANI1580214599567RD121')
 
@@ -153,35 +127,6 @@ describe('The API on /api/animals Endpoint at POST method should...', () => {
 })
 
 describe('The API on /api/animals/:id Endpoint at PATCH method should...', () => {
-  beforeAll(() => {
-    populateDB({
-      "ANI1580214599567RD121": {
-        "created_at": "2020-01-28T12:29:59.567Z",
-        "updated_at": "2020-01-28T12:29:59.567Z",
-        "pet_name": "Belchior Fernandes Montalvão",
-        "description": "Gatinho mais fofinho desse mundo",
-        "animal_type": "Gato",
-        "pet_age": "6 Meses",
-        "sex": "Macho",
-        "color": "Branco Malhado",
-        "image_url": ""
-      },
-      "ANI1580216220549RD493": {
-        "created_at": "2020-01-28T12:57:00.550Z",
-        "updated_at": "2020-01-28T12:57:00.550Z",
-        "pet_name": "Tereza Fernandes Montalvão",
-        "description": "Gatinha mais perfeita desse mundão redondo",
-        "animal_type": "Gato",
-        "pet_age": "6 Meses",
-        "sex": "Fêmea",
-        "color": "Malhada",
-        "image_url": ""
-      }
-    })
-  })
-
-  afterAll(() => cleanDB())
-
   test('return status code 200 and an object representing updated animal', async () => {
     const res = await request(server.app).patch('/api/animals/ANI1580216220549RD493')
       .send({ "pet_name": "Tereza Silva" })
@@ -202,35 +147,6 @@ describe('The API on /api/animals/:id Endpoint at PATCH method should...', () =>
 })
 
 describe('The API on /api/animals/:id Endpoint at DELETE method should...', () => {
-  beforeAll(() => {
-    populateDB({
-      "ANI1580214599567RD121": {
-        "created_at": "2020-01-28T12:29:59.567Z",
-        "updated_at": "2020-01-28T12:29:59.567Z",
-        "pet_name": "Belchior Fernandes Montalvão",
-        "description": "Gatinho mais fofinho desse mundo",
-        "animal_type": "Gato",
-        "pet_age": "6 Meses",
-        "sex": "Macho",
-        "color": "Branco Malhado",
-        "image_url": ""
-      },
-      "ANI1580216220549RD493": {
-        "created_at": "2020-01-28T12:57:00.550Z",
-        "updated_at": "2020-01-28T12:57:00.550Z",
-        "pet_name": "Tereza Fernandes Montalvão",
-        "description": "Gatinha mais perfeita desse mundão redondo",
-        "animal_type": "Gato",
-        "pet_age": "6 Meses",
-        "sex": "Fêmea",
-        "color": "Malhada",
-        "image_url": ""
-      }
-    })
-  })
-
-  afterAll(() => cleanDB())
-
   test('return status code 204 for a succesful delete operation', async () => {
     const res = await request(server.app).delete('/api/animals/ANI1580216220549RD493')
 
