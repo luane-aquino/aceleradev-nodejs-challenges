@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="19" failures="0" time="35.585">
+  <testsuite name="The API on /v1/teams Endpoint at GET method should..." errors="0" failures="0" skipped="0" timestamp="2020-03-22T22:16:36" time="35.171" tests="19">
+    <testcase classname="The API on /v1/teams Endpoint at GET method should... return 200 as status code and have &apos;total&apos; and &apos;data&apos; as properties" name="The API on /v1/teams Endpoint at GET method should... return 200 as status code and have &apos;total&apos; and &apos;data&apos; as properties" time="1.715">
+    </testcase>
+    <testcase classname="The API on /v1/teams Endpoint at GET method should... return the right number of items and an object with all items" name="The API on /v1/teams Endpoint at GET method should... return the right number of items and an object with all items" time="1.584">
+    </testcase>
+    <testcase classname="The API on /v1/teams Endpoint at GET method should... return the &apos;data&apos; property with all items from DB" name="The API on /v1/teams Endpoint at GET method should... return the &apos;data&apos; property with all items from DB" time="1.336">
+    </testcase>
+    <testcase classname="The API on /v1/teams/:teamId Endpoint at GET method should... return 200 as status code and have properly attributes" name="The API on /v1/teams/:teamId Endpoint at GET method should... return 200 as status code and have properly attributes" time="1.604">
+    </testcase>
+    <testcase classname="The API on /v1/teams/:teamId Endpoint at GET method should... return 200 as status code and the item founded" name="The API on /v1/teams/:teamId Endpoint at GET method should... return 200 as status code and the item founded" time="1.621">
+    </testcase>
+    <testcase classname="The API on /v1/teams/:teamId/players Endpoint at GET method should... return 200 as status code and have &apos;total&apos; and &apos;data&apos; as properties" name="The API on /v1/teams/:teamId/players Endpoint at GET method should... return 200 as status code and have &apos;total&apos; and &apos;data&apos; as properties" time="2.127">
+    </testcase>
+    <testcase classname="The API on /v1/teams/:teamId/players Endpoint at GET method should... return the right number of items and an object with all items" name="The API on /v1/teams/:teamId/players Endpoint at GET method should... return the right number of items and an object with all items" time="1.829">
+    </testcase>
+    <testcase classname="The API on /v1/teams/:teamId/players Endpoint at GET method should... return the &apos;data&apos; property with all items from DB" name="The API on /v1/teams/:teamId/players Endpoint at GET method should... return the &apos;data&apos; property with all items from DB" time="1.46">
+    </testcase>
+    <testcase classname="The API on /v1/teams Endpoint at POST method should... return 201 as status code and the new record created properties" name="The API on /v1/teams Endpoint at POST method should... return 201 as status code and the new record created properties" time="1.458">
+    </testcase>
+    <testcase classname="The API on /v1/teams Endpoint at POST method should... return the new record created" name="The API on /v1/teams Endpoint at POST method should... return the new record created" time="1.438">
+    </testcase>
+    <testcase classname="The API on /v1/players Endpoint at GET method should... return 200 as status code and have &apos;total&apos; and &apos;data&apos; as properties" name="The API on /v1/players Endpoint at GET method should... return 200 as status code and have &apos;total&apos; and &apos;data&apos; as properties" time="1.96">
+    </testcase>
+    <testcase classname="The API on /v1/players Endpoint at GET method should... return the right number of items and an object with all items" name="The API on /v1/players Endpoint at GET method should... return the right number of items and an object with all items" time="2.048">
+    </testcase>
+    <testcase classname="The API on /v1/players Endpoint at GET method should... return the &apos;data&apos; property with all items from DB" name="The API on /v1/players Endpoint at GET method should... return the &apos;data&apos; property with all items from DB" time="1.599">
+    </testcase>
+    <testcase classname="The API on /v1/players Endpoint at GET method should... return only brazilian players if uses query parameter &apos;nationality&apos; on request" name="The API on /v1/players Endpoint at GET method should... return only brazilian players if uses query parameter &apos;nationality&apos; on request" time="1.72">
+    </testcase>
+    <testcase classname="The API on /v1/players Endpoint at GET method should... return only players with score equal or greather than 90 if uses query parameter &apos;score&apos; on request" name="The API on /v1/players Endpoint at GET method should... return only players with score equal or greather than 90 if uses query parameter &apos;score&apos; on request" time="1.747">
+    </testcase>
+    <testcase classname="The API on /v1/players/:playerId Endpoint at GET method should... return 200 as status code and have properly attributes" name="The API on /v1/players/:playerId Endpoint at GET method should... return 200 as status code and have properly attributes" time="1.508">
+    </testcase>
+    <testcase classname="The API on /v1/players/:playerId Endpoint at GET method should... return 200 as status code and the item founded" name="The API on /v1/players/:playerId Endpoint at GET method should... return 200 as status code and the item founded" time="1.478">
+    </testcase>
+    <testcase classname="The API on /v1/players Endpoint at POST method should... return 201 as status code and the new record created properties" name="The API on /v1/players Endpoint at POST method should... return 201 as status code and the new record created properties" time="2.277">
+    </testcase>
+    <testcase classname="The API on /v1/players Endpoint at POST method should... return the new record created" name="The API on /v1/players Endpoint at POST method should... return the new record created" time="1.496">
+    </testcase>
+  </testsuite>
+</testsuites>
